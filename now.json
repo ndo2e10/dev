@@ -1,0 +1,3 @@
+{
+  "routes": [{ "src": "/croissant", "dest": "/croissant.html" }]
+}
