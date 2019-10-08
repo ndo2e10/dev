@@ -9,7 +9,14 @@ $ vagrant ssh
 $ vagrant halt #suspend
 ```
 
-* provisioning bootstrap.sh (same dir as VagrantFile)
+* provisioning 
+** VagrantFile
+
+```
+config.vm.provision :shell, path: "bootstrap.sh"
+```
+
+* bootstrap.sh (same dir as VagrantFile)
 
 ```
 apt-get update && apt-get upgrade
