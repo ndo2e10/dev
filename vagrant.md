@@ -33,7 +33,7 @@ sudo snap install --classic heroku
 * re-provision (if vm already running)
 
 ```
-vagrant reload --provision
+$ vagrant reload --provision
 ```
 
 
