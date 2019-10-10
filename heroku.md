@@ -4,6 +4,20 @@ Prerequisite [check vagrant file](vagrant.md):
 ```
 $ nest new croissant-app
 $ cd /vagrant/croissantApp
+```
+
+edit src/main.ts (add process.env.PORT for heroku)
+
+```
+...
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  await app.listen(process.env.PORT || 3000);
+}
+...
+```
+
+```
 $ npm run start
 ```
 
