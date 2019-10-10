@@ -57,5 +57,5 @@ open heroku url here: https://powerful-temple-39888.herokuapp.com/
 
 > Eventually update heroku config
 >> $ heroku config:set NPM_CONFIG_PRODUCTION=false
->> $ heroku config:set NODE_ENV=production #default
+>>> $ heroku config:set NODE_ENV=production #default
 
