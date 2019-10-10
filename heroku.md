@@ -51,5 +51,11 @@ $ git add . #don't forget .gitignore file with dist and node_modules
 $ git commit -m "Croissant-App"
 $ git push heroku master #push and deploy
 $ heroku logs -n 200 #view logs
-
 ```
+
+open heroku url here: https://powerful-temple-39888.herokuapp.com/
+
+> Eventually update heroku config
+>> $ heroku config:set NPM_CONFIG_PRODUCTION=false
+>> $ heroku config:set NODE_ENV=production #default
+
