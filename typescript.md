@@ -16,7 +16,7 @@ https://vim.fandom.com/wiki/Example_vimrc
 also add javascript highlight for typescript files
 
 ```
-autocmd BufNewFile,BufRead *.meals set syntax=javascript
+autocmd BufNewFile,BufRead *.ts set syntax=javascript
 ```
 
 ## Sample app
