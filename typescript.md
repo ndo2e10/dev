@@ -49,3 +49,11 @@ console.log(greeter(user));
 tsc hello.ts
 node hello.js #output: Hello, Nuno X
 ```
+
+## NATS
+
+```
+curl -L https://github.com/nats-io/nats-server/releases/download/v2.1.0/nats-server-v2.1.0-linux-amd64.zip -o ~/nats-server.zip
+sudo apt install unzip
+unzip ~/nats-server.zip -d ~/nats-server
+```
