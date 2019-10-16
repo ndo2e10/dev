@@ -1,11 +1,18 @@
 Prerequisite [check vagrant file](vagrant.md):
 * vagrant box with: node 12x, npm 6x
 
+## Typescript
+
 * get typescript with npm
 
 ```
 $ sudo npm -g i typescript # will provide tsc
 ```
+
+We will use vim as main editor so use a decent .vimrc file:
+
+https://vim.fandom.com/wiki/Example_vimrc
+
 
 ## Sample app
 
