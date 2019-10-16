@@ -1,4 +1,4 @@
-* setting up
+## setting up
 
 ```
 $ mkdir ubuntu
@@ -9,8 +9,9 @@ $ vagrant ssh #connect
 $ vagrant suspend #halt #destroy
 ```
 
-* provisioning 
-** VagrantFile
+## provisioning
+
+* VagrantFile
 
 ```
 config.vm.provision :shell, path: "bootstrap.sh"
