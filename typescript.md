@@ -21,6 +21,8 @@ autocmd BufNewFile,BufRead *.ts set syntax=javascript
 
 ## Sample app
 
+(see also: https://codeburst.io/typescript-node-starter-simplified-60c7b7d99e27)
+
 ```
 mkdir /vagrant/nats-app
 npm init
