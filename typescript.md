@@ -13,6 +13,11 @@ We will use vim as main editor so use a decent .vimrc file:
 
 https://vim.fandom.com/wiki/Example_vimrc
 
+also add javascript highlight for typescript files
+
+```
+autocmd BufNewFile,BufRead *.meals set syntax=javascript
+```
 
 ## Sample app
 
