@@ -4,9 +4,53 @@ Prerequisite [check vagrant file](vagrant.md):
 ## NATS
 
 ```
+# download
 curl -L https://github.com/nats-io/nats-server/releases/download/v2.1.0/nats-server-v2.1.0-linux-amd64.zip -o ~/nats-server.zip
+
+# extract
 sudo apt install unzip
 unzip ~/nats-server.zip -d ~/nats-server
+```
+
+* update VagrantFile for port fowarding (vargrant reload after modification)
+
+```
+config.vm.network :forwarded_port, guest: 4222, host: 4223
+```
+
+* start nats server 
+
+```
+# start default port 4222
+./nats-server & 
+```
+
+### Play with telnet
+
+NATS is an incredibly fast, open source messaging system built on a simple, yet powerful, core. The server uses a text-based protocol, so while there are a number of language-specific client libraries, you can literally telnet into a NATS server and send and receive messages. NATS is designed to be always-on, connected and ready to accept commands.
+
+* first terminal, connect and subscribe to subject=test, internal id=0
+
+```
+telnet localhost 4222
+sub test 0
++OK
+```
+
+* second terminal, connecz and publish to subject=test, content length=1, payload=A
+
+```
+telnet localhost 4222
+pub test 1
+A
++OK
+```
+
+subscriber will receive: 
+
+```
+MSG test 0 1
+A
 ```
 
 ## Useful links
