@@ -37,7 +37,7 @@ sub test 0
 +OK
 ```
 
-* second terminal, connecz and publish to subject=test, content length=1, payload=A
+* second terminal, connect and publish to subject=test, content length=1, payload=A
 
 ```
 telnet localhost 4222
@@ -53,7 +53,35 @@ MSG test 0 1
 A
 ```
 
+## Javascript client
+
+```
+mkdir /vagrant/nats-app
+npm init
+npm i nats -S
+vim index.js
+```
+
+* index.js
+
+``` 
+const NATS = require('nats');
+const nats = NATS.connect();
+ 
+// simple subscriber
+nats.subscribe('test', function(msg) {
+  console.log('Received a message: ' + msg);
+});
+```
+
+* run: node index.js  
+* connect to nats using telnet
+  * publish to subject=test, content length=5, payload=Hello
+  * publish to subject=test, content length=5, payload=World
+
+
 ## Useful links
 * https://medium.com/capital-one-tech/lightweight-cloud-native-messaging-with-nats-ad730ca2becf
 * https://nats-io.github.io/docs/nats_protocol/nats-protocol.html
+* https://github.com/nats-io/nats.js
 * https://docs.nestjs.com/microservices/basics
