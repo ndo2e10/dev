@@ -3,7 +3,7 @@
 
 ![nodejs version](https://img.shields.io/badge/node-%3E%3D%2012-success)
 
-## read.html
+## read.html
 
 read.html is a static html page used to render this repository's content.
 
