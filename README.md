@@ -18,3 +18,7 @@ Following markdown files can be viewed as static html files:
 * https://dev.ndo2e10.now.sh/read.html?md=heroku
 * https://dev.ndo2e10.now.sh/read.html?md=typescript
 * https://dev.ndo2e10.now.sh/read.html?md=nats
+
+## to-read (links)
+
+https://v8.dev/features/modules
