@@ -22,19 +22,19 @@
   <body>
     <zero-md id="md-element" manual-render src=""></zero-md>
 
-    <header class="header">ndo2e10</header>
+    <header id="md-header" class="header">ndo2e10</header>
 
   </body>
   <script type="module">
   (async () => {
-    const moduleSpecifier = 'https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js';
-    await import(moduleSpecifier);
-    let url = new URL(window.location.href);
-    let md = url.searchParams.get("md");
+    // loading zero-md async but waiting for import before rendering md
+    await import('https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js');
+    let md = new URL(window.location.href).searchParams.get("md");
     let el = document.querySelector('#md-element');
     el.setAttribute("src", "https://raw.githubusercontent.com/ndo2e10/dev/master/" + md + ".md");
     console.log("zero-md with src https://raw.githubusercontent.com/ndo2e10/dev/master/" + md + ".md");
     el.render();
+    document.querySelector('#md-header').innerText = "ndo2e10 - " + md;
   })();
   </script>
 </html>
