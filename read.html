@@ -8,7 +8,6 @@
     <title>Read</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 
     <style>
       /* Edit your header styles here */
@@ -26,12 +25,16 @@
     <header class="header">ndo2e10</header>
 
   </body>
-  <script>
+  <script type="module">
+  (async () => {
+    const moduleSpecifier = 'https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js';
+    await import(moduleSpecifier);
     let url = new URL(window.location.href);
     let md = url.searchParams.get("md");
     let el = document.querySelector('#md-element');
     el.setAttribute("src", "https://raw.githubusercontent.com/ndo2e10/dev/master/" + md + ".md");
     console.log("zero-md with src https://raw.githubusercontent.com/ndo2e10/dev/master/" + md + ".md");
     el.render();
+  })();
   </script>
 </html>
