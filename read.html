@@ -21,9 +21,16 @@
     </style>
   </head>
   <body>
-    <zero-md src="https://raw.githubusercontent.com/ndo2e10/dev/master/vagrant.md"></zero-md>
+    <zero-md id="md-element" manual-render src=""></zero-md>
 
     <header class="header">ndo2e10</header>
 
   </body>
+  <script language="javascrip">
+    let url = new URL(window.location.href);
+    let md = url.searchParams.get("md");
+    let el = document.querySelector('#md-element');
+    el.setAttribute("src", "https://raw.githubusercontent.com/ndo2e10/dev/master/" + md + ".md");
+    el.render();
+  </script>
 </html>
