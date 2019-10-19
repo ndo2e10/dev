@@ -11,10 +11,11 @@ Prerequisite [check vagrant file](vagrant.md):
   * nyc for test coverage
   * ts-node for running typescript on node directly
   * typescript
+  * jasmine types
   
 ```
 mkdir /vagrant/sample-app
-npm init
+npm init -y
 npm i jasmine nyc ts-node typescript -D
 npm i @types/jasmine -D
 ```
@@ -30,23 +31,34 @@ npm i @types/jasmine -D
 
 * jasmine.json
 
-
 ```
 "spec_dir": "tests",
 "spec_files": ["**/*[tT]est.ts"]
 ```
 
-* sample test
+* sample test calculator.test.ts
 
 ```
+import {Calculator} from '../src/calculator';
+
 describe('calculate', function() {
   it('add', function() {
-    let result = Calculator.Sum(5, 2);
+    let result = Calculator.sum(5, 2);
     expect(result).toBe(7);
   });
 });
 ```
 
+* calculator.ts
+
+```
+export class Calcuator {
+  static sum(a: number, b: number) : number {
+    return a + b;
+  }
+}
+
+```
 
 * test / coverage
 
