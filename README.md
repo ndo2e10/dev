@@ -6,8 +6,11 @@
 ## GitHub Pages
 
 (out-of-the-box feature on github)
-* https://ndo2e10.github.io/dev/
+* https://<username>.github.io/<repo>/
 
+Markdown files are dynamically wrapped as HTML pages and links are converted:
+
+* [readme](README.md)
 * [vagrant doc](vagrant.md)
 * [heroku doc](heroku.md)
 * [typescript doc](typescript.md)
