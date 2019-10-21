@@ -7,10 +7,12 @@
 
 (out-of-the-box feature on github)
 * https://ndo2e10.github.io/dev/
-* https://ndo2e10.github.io/dev/vagrant
-* https://ndo2e10.github.io/dev/heroku
-* https://ndo2e10.github.io/dev/typescript
-* https://ndo2e10.github.io/dev/nats
+
+* [vagrant doc](vagrant.md)
+* [heroku doc](heroku.md)
+* [typescript doc](typescript.md)
+* [nats doc](nats.md)
+
 
 ## read.html
 
