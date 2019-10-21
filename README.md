@@ -6,7 +6,7 @@
 ## GitHub Pages
 
 (out-of-the-box feature on github)
-* https://<username>.github.io/<repo>/
+* https://`<username`>.github.io/`<repo`>/
 
 Markdown files are dynamically wrapped as HTML pages and links are converted:
 
