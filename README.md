@@ -1,11 +1,8 @@
 # dev
 
-
-![nodejs version](https://img.shields.io/badge/node-%3E%3D%2012-success)
-
 ## GitHub Pages
 
-(out-of-the-box feature on github)
+(out-of-the-box feature on github, free for public repos)
 * https://`<username`>.github.io/`<repo`>/
 
 Markdown files are dynamically wrapped as HTML pages and links are converted:
