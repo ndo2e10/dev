@@ -63,4 +63,8 @@ class Example implements CommandLineRunner {
 }
 ```
 
-For more [sample](https://github.com/spring-projects/spring-boot/tree/v2.2.2.RELEASE/spring-boot-project/spring-boot-cli/samples)
+For more [samples](https://github.com/spring-projects/spring-boot/tree/v2.2.2.RELEASE/spring-boot-project/spring-boot-cli/samples)
+
+## Futher readings
+
+* [groovy RESTClient (extension of HTTPBuilder)](https://github.com/jgritman/httpbuilder/wiki/RESTClient)
