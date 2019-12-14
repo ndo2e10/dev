@@ -1,7 +1,7 @@
 Prerequisite [check vagrant file](vagrant.md):
 * vagrant box with: java 11+
 
-## Spring-boot-cli
+## Spring-Boot-CLI
 
 Download and extract latest archive, follow instruction [here](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started-installing-the-cli).
 
@@ -68,3 +68,4 @@ For more [samples](https://github.com/spring-projects/spring-boot/tree/v2.2.2.RE
 ## Futher readings
 
 * [groovy RESTClient (extension of HTTPBuilder)](https://github.com/jgritman/httpbuilder/wiki/RESTClient)
+* [groovy HTTPBuilder Cookies sample](https://blog.swwomm.com/2011/01/groovy-httpbuilder-cookies.html)
