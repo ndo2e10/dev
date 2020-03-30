@@ -1,7 +1,7 @@
 ## Connecting to GitHub with SSH
 
 ```
-$ ssh-keygen -t rsa -b 4096 -C "d.santos.nuno@gmail.com"
+$ ssh-keygen -t rsa -b 4096 -C "xxx@gmail.com"
 ```
 
 * add to ssh config ~/.ssh/config
