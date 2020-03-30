@@ -1,4 +1,4 @@
-## setting up
+## setting up ssh
 
 ```
 $ ssh-keygen -t rsa -b 4096 -C "d.santos.nuno@gmail.com"
